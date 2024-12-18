@@ -1,6 +1,4 @@
 $(function () {
-  // 메뉴 버튼
-
   // 직무 홈페이지, 이야기 홈페이지 버튼 클릭
   $("main .title1 ul li ").click(function () {
     var thisIndex = $(this).index();
@@ -17,5 +15,18 @@ $(function () {
     $("main>#wrap").eq(thatIndex).show();
     $(".title a").removeClass("on");
     $(this).find("a").addClass("on");
+  });
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    }
   });
 });

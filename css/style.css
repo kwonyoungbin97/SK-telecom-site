@@ -94,23 +94,39 @@ main {
 
 /* 메인 */
 
-.slide {
+.swiper {
+  width: 100%;
+  height: 700px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
 }
 
-.slide-wrap {
-  width: 3386px;
-  display: inline-block;
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.slide-wrap img {
-  width: 100%;
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
 }
+.swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #F05937;
+
+}
+
+
 
 .mainimg-inner {
   position: relative;

@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="./css/minified.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/common.js"></script>
 
 <body>
@@ -79,11 +79,12 @@
     </div>
   </header>
   <!-- slide -->
-  <div class="slide">
-    <div class="slide-wrap">
-      <img src="./img/main-slide01.png" alt="main-slide01">
-      <img src="./img/main-slide02.png" alt="main-slide02">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./img/main-slide01.png" alt="main-slide01"></div>
+      <div class="swiper-slide"><img src="./img/main-slide02.png" alt="main-slide02"></div>
     </div>
+    <div class="swiper-pagination"></div>
   </div>
   <!-- main -->
   <main>
